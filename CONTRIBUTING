@@ -1,0 +1,19 @@
+# Contributing Guidelines
+
+Thank you for your interest in contributing to the Simple Interest Calculator project.
+
+This project is part of an educational financial inclusion initiative and we welcome improvements that enhance clarity, usability, accessibility, and code quality.
+
+---
+
+## 📌 How to Contribute
+
+### 1. Fork the Repository
+
+Click the **Fork** button on GitHub to create your own copy of the project.
+
+### 2. Clone Your Fork
+
+```bash
+git clone https://github.com/your-username/github-final-project.git
+cd github-final-project
