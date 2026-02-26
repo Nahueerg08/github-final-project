@@ -54,7 +54,7 @@ Where:
 │  
 ├── Calculadora de Interes.html  
 ├── Calculadora de Interes.js  
-├── style.css  
+├── Calculadora de Interes.css  
 ├── README.md  
 ├── LICENSE  
 ├── CODE_OF_CONDUCT.md  
