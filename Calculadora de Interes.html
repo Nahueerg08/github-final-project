@@ -1,43 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Calculadora de Interes Simple</title>
-    <script src="script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class = "maindiv">
+    <script src="Calculadora de Interes.js" defer></script>
+</head>
+
+<body>
+    <main class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
+        <label>
+            Principal Amount:
+            <input type="number" id="principal" min="0" step="0.01">
+        </label>
+        <br><br>
 
-        Rate <input type="range"  id="rate" min="1" max="20" value="10.5" step="0.25" onchange="updateRate()">  <br/>
-        <span id= "rate_val">
-            10.25
-        </span>% <br/>
+        <label>
+            Interest Rate:
+            <input 
+                type="range" 
+                id="rate" 
+                min="1" 
+                max="20" 
+                value="10.25" 
+                step="0.25" 
+                onchange="updateRate()">
+        </label>
+        <span id="rate_val">10.25</span>% 
+        <br><br>
 
-        No. of Years <input type="number"  id="years" list="all_years">  <br/>
+        <label>
+            Number of Years:
+            <input type="number" id="years" list="all_years" min="1">
+        </label>
+
         <datalist id="all_years">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
         </datalist>
-            
 
-        Interest : <span id="result"></span><br>
+        <br><br>
 
-        <button onclick="compute()">Calcular Interes</button>
-        <span id="result">
-        </span>
-    </body>
+        <button onclick="compute()">Calculate Interest</button>
+
+        <h3>Result:</h3>
+        <div id="result"></div>
+
+    </main>
+
     <footer>
-        &#169; This Calculator belongs to Cestau Nahuel
+        <p>© 2026 Cestau Nahuel - Educational Project</p>
     </footer>
+</body>
 </html>
