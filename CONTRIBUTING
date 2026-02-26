@@ -2,7 +2,25 @@
 
 Thank you for your interest in contributing to the Simple Interest Calculator project.
 
-This project is part of an educational financial inclusion initiative and we welcome improvements that enhance clarity, usability, accessibility, and code quality.
+We welcome and appreciate all types of contributions. Whether you want to report a bug, fix an issue, improve documentation, suggest enhancements, or share new ideas — your input is valuable.
+
+---
+
+## 🌟 Types of Contributions Welcome
+
+We actively welcome:
+
+- Bug reports
+- Bug fixes
+- Documentation improvements
+- Code refactoring
+- UI/UX enhancements
+- Accessibility improvements
+- Performance optimizations
+- Feature suggestions
+- New ideas that improve financial clarity or usability
+
+No contribution is too small. Even correcting typos or improving wording helps.
 
 ---
 
@@ -10,7 +28,7 @@ This project is part of an educational financial inclusion initiative and we wel
 
 ### 1. Fork the Repository
 
-Click the **Fork** button on GitHub to create your own copy of the project.
+Click the **Fork** button on GitHub.
 
 ### 2. Clone Your Fork
 
