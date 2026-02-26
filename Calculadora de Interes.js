@@ -1,25 +1,34 @@
-function compute()
-{
-    var principal= document.getElementById("principal").value;
-    var rate= document.getElementById("rate").value;
-    var years= document.getElementById("years").value;
-    var interest= principal * years * rate/100;
-    var year= new Date().getFullYear() + parseInt(years);
-    var amount= parseInt(principal) + parseFloat(interest);
-    var result= document.getElementById("result");
-    if (principal <=0) {
-        alert("Ingrese un numero Positivo!! ");
+function compute() {
+    var principal = parseFloat(document.getElementById("principal").value);
+    var rate = parseFloat(document.getElementById("rate").value);
+    var years = parseInt(document.getElementById("years").value);
+
+    if (isNaN(principal) || principal <= 0) {
+        alert("Please enter a valid positive number for the principal.");
         document.getElementById("principal").focus();
+        return;
     }
 
-     else {
-                result.innerHTML = "Si depositas $" + "<mark>" + principal + "</mark>" + ",\<br\> a una tasa de interes de " + "<mark>" + rate + "%" + "</mark>" + "\<br\> Recibiras un monto de $" + "<mark>" + amount + "</mark>" + ",\<br\> en el año " + "<mark>" + year + "</mark>" + "\<br\>";
-            }
-        
-    
+    if (isNaN(years) || years <= 0) {
+        alert("Please select a valid number of years.");
+        document.getElementById("years").focus();
+        return;
+    }
+
+    var interest = principal * years * rate / 100;
+    var year = new Date().getFullYear() + years;
+    var amount = principal + interest;
+
+    var result = document.getElementById("result");
+
+    result.innerHTML =
+        "If you deposit $" + "<mark>" + principal + "</mark>" +
+        "<br> at an interest rate of " + "<mark>" + rate + "%" + "</mark>" +
+        "<br> You will receive an amount of $" + "<mark>" + amount.toFixed(2) + "</mark>" +
+        "<br> in the year " + "<mark>" + year + "</mark>";
 }
 
 function updateRate() {
-var rateval = document.getElementById ("rate").value;
-document.getElementById("rate_val").innerText = rateval;
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText = rateval;
 }
