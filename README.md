@@ -52,9 +52,7 @@ Where:
 
 /simple-interest-calculator  
 │  
-├── Calculadora de Interes.html  
-├── Calculadora de Interes.js  
-├── Calculadora de Interes.css  
+├── simple-interest.sh  
 ├── README.md  
 ├── LICENSE  
 ├── CODE_OF_CONDUCT.md  
