@@ -67,4 +67,4 @@ Where:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-organization/simple-interest-calculator.git
+git clone https://github.com/Nahueerg08/github-final-project.git
